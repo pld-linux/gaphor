@@ -13,7 +13,7 @@ Patch1:		%{name}-datadir.patch
 URL:		http://gaphor.sourceforge.net/
 BuildRequires:	python-devel
 Requires:	python-diacanvas >= 0.13
-%pyrequireq_eq	python-libs
+%pyrequires_eq	python-libs
 Requires:	python-pygtk-gtk >= 2.0.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
