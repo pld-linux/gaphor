@@ -2,7 +2,7 @@ Summary:	UML modeling environment written in Python
 Summary(pl):	¦rodowisko modelowania UML oparte o Pythona
 Name:		gaphor
 Version:	0.5.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Engineering
 Source0:	http://dl.sourceforge.net/gaphor/%{name}-%{version}.tar.gz
