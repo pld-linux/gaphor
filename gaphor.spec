@@ -5,7 +5,7 @@ Version:	0.5.0
 Release:	1
 License:	GPL
 Group:		Applications/Engineering
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gaphor/%{name}-%{version}.tar.gz
 # Source0-md5:	761451126030e3171d0b20fee829d800
 Patch0:		%{name}-pluginsdir.patch
 Patch1:		%{name}-datadir.patch
@@ -22,9 +22,9 @@ able to create nice UML diagrams for documentation and to assist you
 with design decisions. Gaphor will help you create your applications.
 
 %description -l pl
-Gaphost jest ³atwym w u¿yciu ¶rodowiskiem do projektowania UML. To
+Gaphor jest ³atwym w u¿yciu ¶rodowiskiem do projektowania UML. To
 znaczy u³atwia tworzenie diagramów UML dla dokumentacji oraz pomaga w
-podejmowaniu decyzji. Gaphost u³atwia pracê przy tworzeniu aplikacji.
+podejmowaniu decyzji. Gaphor u³atwia pracê przy tworzeniu aplikacji.
 
 %prep
 %setup -q
