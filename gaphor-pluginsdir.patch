@@ -1,0 +1,11 @@
+--- setup.py~	2004-06-23 08:47:21.000000000 +0200
++++ setup.py	2004-08-28 01:17:15.000000000 +0200
+@@ -355,7 +355,7 @@
+       # data files are relative to <prefix>/share/gaphor (see setup.cfg)
+       data_files=[('', ['data/icons.xml']),
+                   ('pixmaps', glob('data/pixmaps/*.png')),
+-                  ('plugins', glob('data/plugins/**'))
++                  ('plugins', glob('data/plugins/*/*'))
+       ],
+       scripts=['bin/gaphor'],
+ 
