@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/gaphor/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-pluginsdir.patch
 Patch1:		%{name}-datadir.patch
+Patch2:		%{name}-int-overflow.patch
 URL:		http://gaphor.sourceforge.net/
 BuildRequires:	python-devel
 Requires:	python-diacanvas >= 0.13
@@ -32,6 +33,7 @@ podejmowaniu decyzji. Gaphor u³atwia pracê przy tworzeniu aplikacji.
 %setup -q
 %patch0
 %patch1
+%patch2 -p1
 
 %build
 python setup.py build
