@@ -32,7 +32,7 @@ podejmowaniu decyzji. Gaphor u³atwia pracê przy tworzeniu aplikacji.
 
 %prep
 %setup -q
-#%patch0 -p0
+%patch0 -p0
 
 %build
 Xvfb :69 -nolisten tcp -ac -terminate >/dev/null 2>&1 &
