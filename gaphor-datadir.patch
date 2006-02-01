@@ -1,11 +1,11 @@
---- setup.py~	2004-08-28 01:46:35.000000000 +0200
-+++ setup.py	2004-08-28 01:49:14.000000000 +0200
-@@ -145,7 +145,7 @@
-         self.mkpath(os.path.dirname(outfile))
-         f = open(outfile, 'w')
-         f.write('VERSION=\'%s\'\n' % VERSION)
--        f.write('DATA_DIR=\'%s\'\n' % data_dir)
-+        f.write('DATA_DIR=\'/usr/share/gaphor\'\n')
+--- setup.py.orig	2006-02-01 17:47:44.000000000 +0000
++++ setup.py	2006-02-01 17:48:01.000000000 +0000
+@@ -152,7 +152,7 @@
          f.write('import os\n')
-         f.write('USER_DATA_DIR=os.getenv(\'HOME\') + \'.gaphor\'\n')
-         f.write('del os\n')
+         f.write('VERSION=\'%s\'\n' % VERSION)
+         # expand backspaces
+-        f.write('DATA_DIR=\'%s\'\n' % data_dir.replace('\\', '\\\\'))
++        f.write('DATA_DIR=\'/usr/share/gaphor\'\n')
+         if os.name == 'nt':
+             home = 'USERPROFILE'
+         else:
