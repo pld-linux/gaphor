@@ -13,10 +13,10 @@ URL:		http://gaphor.sourceforge.net/
 BuildRequires:	X11-Xvfb
 BuildRequires:	python-devel
 BuildRequires:	python-diacanvas >= 0.14.3
-BuildRequires:	python-pygtk-gtk >= 2.0.0
+BuildRequires:	python-pygtk-gtk >= 2.8.4
 %pyrequires_eq	python-libs
 Requires:	python-diacanvas >= 0.14.3
-Requires:	python-pygtk-gtk >= 2.0.0
+Requires:	python-pygtk-gtk >= 2.8.4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,7 +32,7 @@ podejmowaniu decyzji. Gaphor u³atwia pracê przy tworzeniu aplikacji.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch0 -p1
 
 %build
 Xvfb :69 -nolisten tcp -ac -terminate >/dev/null 2>&1 &
