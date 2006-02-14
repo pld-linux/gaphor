@@ -11,10 +11,10 @@ Source1:	%{name}.desktop
 URL:		http://gaphor.sourceforge.net/
 BuildRequires:	xorg-xserver-Xvfb
 BuildRequires:	python-devel
-BuildRequires:	python-diacanvas >= 0.14.3
+BuildRequires:	python-diacanvas >= 0.14.4
 BuildRequires:	python-pygtk-gtk >= 2.8.4
 %pyrequires_eq	python-libs
-Requires:	python-diacanvas >= 0.14.3
+Requires:	python-diacanvas >= 0.14.4
 Requires:	python-pygtk-gtk >= 2.8.4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
