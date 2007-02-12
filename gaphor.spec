@@ -1,5 +1,5 @@
 Summary:	UML modeling environment written in Python
-Summary(pl):	¶rodowisko modelowania UML oparte o Pythona
+Summary(pl.UTF-8):   ≈örodowisko modelowania UML oparte o Pythona
 Name:		gaphor
 Version:	0.8.1
 Release:	1
@@ -24,10 +24,10 @@ Gaphor is an easy to use modeling environment. This means that you are
 able to create nice UML diagrams for documentation and to assist you
 with design decisions. Gaphor will help you create your applications.
 
-%description -l pl
-Gaphor jest ≥atwym w uøyciu ∂rodowiskiem do projektowania UML. To
-znaczy u≥atwia tworzenie diagramÛw UML dla dokumentacji oraz pomaga w
-podejmowaniu decyzji. Gaphor u≥atwia pracÍ przy tworzeniu aplikacji.
+%description -l pl.UTF-8
+Gaphor jest ≈Çatwym w u≈ºyciu ≈õrodowiskiem do projektowania UML. To
+znaczy u≈Çatwia tworzenie diagram√≥w UML dla dokumentacji oraz pomaga w
+podejmowaniu decyzji. Gaphor u≈Çatwia pracƒô przy tworzeniu aplikacji.
 
 %prep
 %setup -q
