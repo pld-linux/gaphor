@@ -1,5 +1,5 @@
 Summary:	UML modeling environment written in Python
-Summary(pl.UTF-8):   Środowisko modelowania UML oparte o Pythona
+Summary(pl.UTF-8):	Środowisko modelowania UML oparte o Pythona
 Name:		gaphor
 Version:	0.8.1
 Release:	1
