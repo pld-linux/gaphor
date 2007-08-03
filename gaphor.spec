@@ -1,15 +1,14 @@
 Summary:	UML modeling environment written in Python
 Summary(pl.UTF-8):	Środowisko modelowania UML oparte o Pythona
 Name:		gaphor
-Version:	0.8.1
-Release:	1
+Version:	0.11.1
+Release:	0.1
 License:	GPL
 Group:		Applications/Engineering
-Source0:	http://dl.sourceforge.net/gaphor/%{name}-%{version}.tar.gz
-# Source0-md5:	60768b5ff8163b90cba6e936144644cc
+Source0:	http://pypi.python.org/packages/source/g/gaphor/%{name}-%{version}.tar.gz
+# Source0-md5:	711915a2ad521a254eb50245da2396d8
 Source1:	%{name}.desktop
-URL:		http://gaphor.sourceforge.net/
-BuildRequires:	xorg-xserver-Xvfb
+URL:		http://gaphor.devjavu.com/
 BuildRequires:	python-devel
 BuildRequires:	python-diacanvas >= 0.14.4
 BuildRequires:	python-pygtk-gtk >= 2.8.4
@@ -33,23 +32,15 @@ podejmowaniu decyzji. Gaphor ułatwia pracę przy tworzeniu aplikacji.
 %setup -q
 
 %build
-Xvfb :69 -nolisten tcp -ac -terminate >/dev/null 2>&1 &
-xvfb_pid=${!}
-DISPLAY=:69 \
-	python setup.py build
-kill ${xvfb_pid} >/dev/null 2>&1 || :
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}}
 
-Xvfb :69 -nolisten tcp -ac -terminate >/dev/null 2>&1 &
-xvfb_pid=${!}
-DISPLAY=:69 \
-	python setup.py install \
+%{__python} setup.py install \
 		--optimize=2 \
 		--root=$RPM_BUILD_ROOT
-kill ${xvfb_pid} >/dev/null 2>&1 || :
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
