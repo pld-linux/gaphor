@@ -1,20 +1,22 @@
+# todo:
+# - add missing runtime requirements
 Summary:	UML modeling environment written in Python
 Summary(pl.UTF-8):	Środowisko modelowania UML oparte o Pythona
 Name:		gaphor
-Version:	0.11.1
+Version:	0.12.2
 Release:	0.1
 License:	GPL
 Group:		Applications/Engineering
 Source0:	http://pypi.python.org/packages/source/g/gaphor/%{name}-%{version}.tar.gz
-# Source0-md5:	711915a2ad521a254eb50245da2396d8
+# Source0-md5:	00a6ab4469931d7ed908960f4bb2360e
 Source1:	%{name}.desktop
 URL:		http://gaphor.devjavu.com/
 BuildRequires:	python-devel
-BuildRequires:	python-diacanvas >= 0.14.4
 BuildRequires:	python-pygtk-gtk >= 2.8.4
 %pyrequires_eq	python-libs
-Requires:	python-diacanvas >= 0.14.4
+Requires:	python-gaphas >= 0.3.3
 Requires:	python-pygtk-gtk >= 2.8.4
+Requires:	somezopepackages, see todo
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,16 +48,16 @@ install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %py_postclean
 
-%find_lang %{name}
+#%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+#%files -f %{name}.lang
+%files
 %defattr(644,root,root,755)
 %doc README PKG-INFO NEWS TODO AUTHORS
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/%{name}
-%{py_sitescriptdir}/zope
-%{_datadir}/%{name}
+%{py_sitescriptdir}/%{name}*egg*
 %{_desktopdir}/%{name}.desktop
