@@ -1,5 +1,5 @@
 # todo:
-# - add missing runtime requirements
+# - add and review runtime requirements
 Summary:	UML modeling environment written in Python
 Summary(pl.UTF-8):	Środowisko modelowania UML oparte o Pythona
 Name:		gaphor
@@ -16,7 +16,10 @@ BuildRequires:	python-pygtk-gtk >= 2.8.4
 %pyrequires_eq	python-libs
 Requires:	python-gaphas >= 0.3.3
 Requires:	python-pygtk-gtk >= 2.8.4
-Requires:	somezopepackages, see todo
+Requires:	Zope-Component
+Requires:	Zope-Event
+Requires:	Zope-Interface
+Requires:	Zope-Testing
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
