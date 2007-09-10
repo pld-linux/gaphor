@@ -17,7 +17,9 @@ BuildRequires:	python-pygtk-gtk >= 2.8.4
 Requires:	python-gaphas >= 0.3.3
 Requires:	python-pygtk-gtk >= 2.8.4
 Requires:	Zope-Component
+Requires:	Zope-DeferredImport
 Requires:	Zope-Event
+# it will be renamed from ZopeInterface
 Requires:	Zope-Interface
 Requires:	Zope-Testing
 BuildArch:	noarch
