@@ -12,6 +12,7 @@ URL:		http://gaphor.devjavu.com/
 BuildRequires:	python-devel
 BuildRequires:	python-pygtk-gtk >= 2.8.4
 %pyrequires_eq	python-libs
+Requires:	python-decorator >= 2.2.0
 Requires:	python-gaphas >= 0.3.3
 Requires:	python-pygtk-gtk >= 2.8.4
 Requires:	Zope-Component
