@@ -8,6 +8,7 @@ Group:		Applications/Engineering
 Source0:	http://pypi.python.org/packages/source/g/gaphor/%{name}-%{version}.tar.gz
 # Source0-md5:	0ee1d17d4fb75a7113b1e496c3c31372
 Source1:	%{name}.desktop
+Patch0:		%{name}-open_fix.patch
 URL:		http://gaphor.devjavu.com/
 BuildRequires:	python-devel
 BuildRequires:	python-pygtk-gtk >= 2.8.4
@@ -33,6 +34,7 @@ podejmowaniu decyzji. Gaphor ułatwia pracę przy tworzeniu aplikacji.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__python} setup.py build
