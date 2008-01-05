@@ -1,0 +1,10 @@
+--- gaphor-0.12.4/gaphor/services/filemanager.py.orig	2008-01-05 16:13:27.000000000 +0000
++++ gaphor-0.12.4/gaphor/services/filemanager.py	2008-01-05 16:13:29.000000000 +0000
+@@ -214,7 +214,6 @@
+             finally:
+                 win.destroy()
+ 
+-    @action(name='file-open', stock_id='gtk-open')
+     def _open_dialog(self, title):
+         filesel = gtk.FileChooserDialog(title=title,
+                                         action=gtk.FILE_CHOOSER_ACTION_OPEN,
