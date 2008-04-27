@@ -16,7 +16,7 @@ Requires:	python-decorator >= 2.2.0
 Requires:	python-gaphas >= 0.3.3
 Requires:	python-pygtk-gtk >= 2.8.4
 Requires:	python-setuptools
-Requires:	Zope-Component
+Requires:	Zope-Component >= 3.4.0-1
 Requires:	Zope-Interface
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
