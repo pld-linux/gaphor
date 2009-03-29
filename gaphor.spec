@@ -1,12 +1,12 @@
 Summary:	UML modeling environment written in Python
 Summary(pl.UTF-8):	Środowisko modelowania UML oparte o Pythona
 Name:		gaphor
-Version:	0.13.0
-Release:	0.1
+Version:	0.13.1
+Release:	1
 License:	GPL
 Group:		Applications/Engineering
 Source0:	http://pypi.python.org/packages/source/g/gaphor/%{name}-%{version}.tar.gz
-# Source0-md5:	8639072318d367b614375b453b0a870d
+# Source0-md5:	cb08850a91f23bee62eb266f4388af0e
 Source1:	%{name}.desktop
 URL:		http://gaphor.devjavu.com/
 BuildRequires:	python-devel
@@ -62,3 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitescriptdir}/%{name}
 %{py_sitescriptdir}/%{name}*egg*
 %{_desktopdir}/%{name}.desktop
+%{_pixmapsdir}/%{name}*
