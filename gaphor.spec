@@ -35,15 +35,13 @@ podejmowaniu decyzji. Gaphor ułatwia pracę przy tworzeniu aplikacji.
 %setup -q
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}}
 
-%{__python} setup.py install \
-		--optimize=2 \
-		--root=$RPM_BUILD_ROOT
+%py_install
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
