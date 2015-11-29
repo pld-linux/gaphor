@@ -9,6 +9,7 @@ Source0:	http://pypi.python.org/packages/source/g/gaphor/%{name}-%{version}.tar.
 # Source0-md5:	cb08850a91f23bee62eb266f4388af0e
 Source1:	%{name}.desktop
 URL:		http://gaphor.devjavu.com/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel
 BuildRequires:	python-pygtk-gtk >= 2.8.4
 %pyrequires_eq	python-libs
